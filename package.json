@@ -6,7 +6,8 @@
     "pg": "^7.17.0",
     "pg-hstore": "^2.3.3",
     "sequelize": "^5.21.3",
-    "yup": "^0.28.0"
+    "yup": "^0.28.0",
+    "sucrase": "^3.12.1"
   },
   "devDependencies": {
     "eslint": "^6.8.0",
@@ -16,8 +17,7 @@
     "eslint-plugin-prettier": "^3.1.2",
     "nodemon": "^2.0.2",
     "prettier": "^1.19.1",
-    "sequelize-cli": "^5.5.1",
-    "sucrase": "^3.11.0"
+    "sequelize-cli": "^5.5.1"
   },
   "name": "test-deploy-heroku",
   "version": "1.0.0",
@@ -26,6 +26,6 @@
   "license": "MIT",
   "scripts": {
     "dev": "nodemon src/server.js",
-    "start": "node src/server.js"
+    "start": "sucrase-node src/server.js"
   }
 }
