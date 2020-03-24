@@ -11,7 +11,7 @@ const routes = new Router();
 routes.use(logRequests);
 
 routes.get('/', (req, res) => {
-  return res.render('hello');
+  return res.send('hello');
 });
 
 routes.post('/projects', ProjectController.store);
