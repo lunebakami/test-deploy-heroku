@@ -23,6 +23,7 @@
   "repository": "https://github.com/lunebakami/test-deploy-heroku.git",
   "license": "MIT",
   "scripts": {
-    "dev": "nodemon src/server.js"
+    "dev": "nodemon src/server.js",
+    "start": "node src/server.js"
   }
 }
