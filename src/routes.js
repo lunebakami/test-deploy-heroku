@@ -10,7 +10,7 @@ const routes = new Router();
 
 routes.use(logRequests);
 
-routes.get('/', (req, res) => {
+routes.get('/test', (req, res) => {
   return res.send('hello');
 });
 
