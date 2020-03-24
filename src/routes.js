@@ -10,6 +10,10 @@ const routes = new Router();
 
 routes.use(logRequests);
 
+routes.get('/', (req, res) => {
+  res.render('hello');
+});
+
 routes.post('/projects', ProjectController.store);
 routes.get('/projects', ProjectController.index);
 
